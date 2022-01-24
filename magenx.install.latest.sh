@@ -235,7 +235,7 @@ if [ -f "${MAGENX_CONFIG_PATH}/distro" ]; then
     OS_NAME=${NAME}
     OS_VERSION=${VERSION_ID}
 
-  if [ "${OS_NAME%% *}" == "Ubuntu" ] && [[ "${OS_VERSION}" =~ "20.04" ]]; then
+  if [ "${OS_NAME%% *}" == "Ubuntu" ] && [[ "${OS_VERSION}" =~ "20.04.3" ]]; then
     OS_DISTRO_KEY="ubuntu"
   elif [ "${OS_NAME%% *}" == "Debian" ] && [ "${OS_VERSION}" == "11" ]; then
     OS_DISTRO_KEY="debian"
